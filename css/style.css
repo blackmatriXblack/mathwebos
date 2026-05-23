@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap');
+*,*:before,*:after{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden}
+body{background:#f9f7f5;color:#3d3d3d;font-family:'Inter','Segoe UI',system-ui,-apple-system,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+
+#term{display:flex;flex-direction:column;height:100vh;max-width:960px;margin:0 auto;padding:20px 24px 12px;position:relative}
+#term-out{flex:1;overflow-y:auto;overflow-x:hidden;white-space:pre-wrap;word-break:break-all;margin:0;padding:8px 0;scroll-behavior:smooth;min-height:0;font-family:'JetBrains Mono','Consolas','Courier New',monospace;font-size:13.5px;line-height:1.55;color:#2d2d2d}
+#term-out::-webkit-scrollbar{width:5px}
+#term-out::-webkit-scrollbar-track{background:transparent}
+#term-out::-webkit-scrollbar-thumb{background:#d0d0d0;border-radius:3px}
+#term-out::-webkit-scrollbar-thumb:hover{background:#bbb}
+
+#term-in{display:flex;align-items:center;gap:10px;padding:10px 0 0;margin-top:auto;flex-shrink:0;border-top:1px solid #e8e4e0}
+#prompt{color:#a09890;white-space:nowrap;flex-shrink:0;font-weight:600;font-size:13px;font-family:'JetBrains Mono','Consolas',monospace}
+#input{flex:1;background:transparent;border:none;color:#2d2d2d;font-family:'JetBrains Mono','Consolas',monospace;font-size:13.5px;outline:none;caret-color:#2d2d2d;padding:3px 0;min-width:0}
+#input::selection{background:#d0d8e8;color:#1a1a1a}
+
+.err{color:#c04040}.ok{color:#3a7a3a}.hl{color:#5060b0}.dim{color:#9a9a9a}.warn{color:#b08030}.em{color:#1a1a1a;font-weight:600}.head{color:#6a6a6a;font-weight:600;border-bottom:1px solid #e0dcd8;display:block;margin-bottom:4px;padding-bottom:2px}
+table{border-collapse:collapse;margin:2px 0;font-family:'JetBrains Mono',monospace;font-size:13px}
+td,th{padding:1px 14px 1px 4px;text-align:left;white-space:nowrap}
+th{color:#6a6a6a;font-weight:600;border-bottom:1px solid #ddd}
+@media(max-width:600px){#term{padding:12px 14px}body{font-size:14px}#term-out,#input{font-size:12.5px}}
